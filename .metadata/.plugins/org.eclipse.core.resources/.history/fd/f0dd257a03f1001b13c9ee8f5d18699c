@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	request.setCharacterEncoding("utf-8");
+
+	String height = request.getParameter("height");
+	String weight = request.getParameter("weight");
+	
+	double h = (Integer.parseInt(height)) / 100;
+	double w = (Double.parseDouble(weight));
+	
+	double bmiResult = w / (h * h);
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>결과화면</h2>
+	<% 
+	if(bmiResult > 23)
+		out.println("당신은 과체중입니다.");
+	else if(bmiResult < 18.5)
+		out.println("당신은 저체중입니다.");
+	else
+		out.println("당신은 정상체중입니다.");
+	%>
+</body>
+</html>

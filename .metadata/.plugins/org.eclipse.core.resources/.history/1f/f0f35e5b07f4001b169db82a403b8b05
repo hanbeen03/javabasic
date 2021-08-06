@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	request.setCharacterEncoding("utf-8");
+
+	String id = request.getParameter("loginId");
+	String pw = request.getParameter("loginPw");
+	String nick = request.getParameter("loginNick");
+	
+	if( id.equals("kkk1234") && pw.equals("1111")) {
+		session.setAttribute("session_id", id);
+		session.setAttribute("session_pw", pw);
+		session.setAttribute("session_nick", nick);
+		response.sendRedirect("session_welcome.jsp");
+	} else { %>
+		<script>
+		alert('로그인에 실패하였습니다.');
+		</script>
+	<% response.sendRedirect("session_login.jsp");
+	}
+
+%>    
+</body>
+</html>

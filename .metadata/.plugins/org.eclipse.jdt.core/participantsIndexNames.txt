@@ -1,0 +1,21 @@
+INDEX VERSION 1.131
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4150411946.index
+\JSPBasic\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\830414255.index
+\JSPBasic\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3817484867.index
+\JDBCBasic\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2201190678.index
+\JSPBasic\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1147028859.index
+\JSPBasic\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\511870316.index
+\JSPBasic\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4277188207.index
+\JDBCBasic\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2989137069.index
+\JDBCBasic\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2867676158.index
+\JSPBasic\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1445354926.index
+\JSPBasic\src

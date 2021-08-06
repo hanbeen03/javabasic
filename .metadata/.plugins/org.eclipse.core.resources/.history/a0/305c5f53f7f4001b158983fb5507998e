@@ -1,0 +1,37 @@
+package kr.co.ictedu;
+//DAO클래스는 DB연동을 전담해 처리합니다.
+public class UsersDAO {
+	//DB주소 아이디 패스워드 미리 저장
+	private static final String URL = "jdbc:mysql://localhost/ict03";
+	private static final String DBID = "root";
+	private static final String UPW = "mysql";
+	
+	/*
+	 * DAO 클래스는 하나의 객체만으로도 DB 연동을 수행할 수 있기 때문에
+	 * 메모리 관리 차원에서 클래스의 객체를 단 1개만 생성하도록
+	 * 싱클톤 패턴을 적용하여 클래스를 디자인합니다.
+	 */
+	
+	//싱클톤 패턴 클래스 디자인 방법
+	// 1.외부에서 객체를 new 키워드로 만들어 쓸 수 없도록 생성자에
+	// private을 붙여줍니다.
+	private UsersDAO() {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	//2. 외부에서 객체 생성을 못 하기 때문에 자기 클래스 내부에서 그냥
+	//스스로 자기 자신을 1개 생성합니다.
+	private static UsersDAO dao = new UsersDAO();
+	
+	
+	//3. 외부에서 객체 생성이 필요할 때 public 선언으로 처리한
+	//getter를 이용해 2에서 만든 객체를 리턴만 해줍니다.
+	//이러면 UsersDAO는 참조형 변수이기 때문에 주소값만 전달합니다.
+	public static UsersDAO getInstance() {
+		return dao;
+	}
+}

@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String id = (String)session.getAttribute("session_id");
+
+	//만약 로그인 상태가 아니면 로그인창으로 리다이렉트 합니다.
+	//dao를 통해 UsersVO를 가지고 와야 합니다.
+	//들고온 UsersVO를 이용해 아래 html태그의 value속성에 표현식을 이용해
+	//UserVO의 아이디, 이름, 이메일을 기입하게 만들어줍니다.
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>회원정보 수정 창</h1>
+	<form action="users_update_ok.jsp" method="post">
+		<input type="text" name="updateId" placeholder="아이디" value="임시아이디" readonly /><br/>
+		<input type="password" name="updatePw" placeholder="비밀번호" /><br/>
+		<input type="text" name="updateUname" placeholder="성명" value="임시이름" /><br/>
+		<input type="email" name="updateEmail" placeholder="이메일주소" value="임시이메일" /><br/>
+		<input type="submit" value="수정" />
+		
+	</form>
+</body>
+</html>
