@@ -5,6 +5,10 @@ C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\83041
 \JSPBasic\src
 C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3817484867.index
 \JDBCBasic\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3558298669.index
+\MyFirstWeb\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3170819523.index
+\JDBCBasic\src
 C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2201190678.index
 \JSPBasic\src
 C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1147028859.index

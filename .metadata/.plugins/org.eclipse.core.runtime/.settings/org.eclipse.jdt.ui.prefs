@@ -1,47 +1,12 @@
 content_assist_completion_replacement_background=200,200,0
-<<<<<<< HEAD
-content_assist_completion_replacement_foreground=180,0,0
-content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaChainProposalCategory\u0000
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.FileOutputStream"/><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.FileOutputStream"/><rhs name\="java.util.Scanner"/></lhs><lhs name\="constructor.Car"><rhs name\="constructor.Car"/></lhs><lhs name\="structure.Dog"><rhs name\="structure.Dog"/></lhs><lhs name\="superclass.Airplane"><rhs name\="superclass.SuperSonicAirplane"/></lhs><lhs name\="superclass.SuperSonicAirplane"><rhs name\="superclass.SuperSonicAirplane"/></lhs><lhs name\="thiskeyword.Person"><rhs name\="thiskeyword.Person"/></lhs><lhs name\="accessmodifier.game.Commoner"><rhs name\="accessmodifier.game.ProtectedWarrior"/></lhs><lhs name\="accessmodifier.game.ProtectedWarrior"><rhs name\="accessmodifier.game.ProtectedWarrior"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.String"/><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.AbstractStringBuilder"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/><rhs name\="java.util.LinkedList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/><rhs name\="java.util.LinkedList"/><rhs name\="java.sql.SQLException"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/><rhs name\="java.util.LinkedList"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.io.OutputStream"><rhs name\="java.io.FileOutputStream"/></lhs><lhs name\="java.io.Flushable"><rhs name\="java.io.FileOutputStream"/></lhs><lhs name\="java.io.FileOutputStream"><rhs name\="java.io.FileOutputStream"/></lhs><lhs name\="java.lang.Exception"><rhs name\="java.sql.SQLException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="java.sql.SQLException"/></lhs><lhs name\="java.sql.SQLException"><rhs name\="java.sql.SQLException"/></lhs></history>
-content_assist_number_of_computers=23
-content_assist_parameters_background=2,2,3
-content_assist_parameters_foreground=237,237,237
-content_assist_proposals_background=255,255,255
-content_assist_proposals_foreground=0,0,0
-eclipse.preferences.version=1
-java_bracket=245,245,245
-java_comment_task_tag=138,138,138
-java_default=230,230,230
-java_doc_default=128,128,128
-java_doc_keyword=138,138,138
-java_doc_link=153,153,153
-java_doc_tag=27,108,139
-java_keyword=183,97,26
-java_keyword_bold=false
-java_keyword_return=183,97,26
-java_keyword_return_bold=false
-java_multi_line_comment=128,128,128
-java_operator=235,235,235
-java_single_line_comment=128,128,128
-java_string=23,198,163
-matchingBracketsColor=245,245,245
-org.eclipse.jdt.internal.ui.navigator.layout=2
-org.eclipse.jdt.internal.ui.navigator.librariesnode=true
-org.eclipse.jdt.ui.formatterprofiles.version=18
-overriddenByCSS=,content_assist_completion_replacement_background,content_assist_completion_replacement_foreground,content_assist_parameters_background,content_assist_parameters_foreground,java_bracket,java_comment_task_tag,java_default,java_doc_default,java_doc_keyword,java_doc_link,java_doc_tag,java_keyword,java_keyword_bold,java_keyword_return,java_keyword_return_bold,java_multi_line_comment,java_operator,java_single_line_comment,java_string,matchingBracketsColor,pf_coloring_argument,pf_coloring_assignment,pf_coloring_comment,pf_coloring_key,pf_coloring_value,semanticHighlighting.abstractClass.color,semanticHighlighting.abstractClass.enabled,semanticHighlighting.abstractMethodInvocation.color,semanticHighlighting.abstractMethodInvocation.enabled,semanticHighlighting.annotation.color,semanticHighlighting.annotation.enabled,semanticHighlighting.annotation.italic,semanticHighlighting.annotationElementReference.color,semanticHighlighting.annotationElementReference.enabled,semanticHighlighting.class.color,semanticHighlighting.class.enabled,semanticHighlighting.deprecatedMember.color,semanticHighlighting.deprecatedMember.enabled,semanticHighlighting.deprecatedMember.strikethrough,semanticHighlighting.deprecatedMember.underline,semanticHighlighting.enum.color,semanticHighlighting.enum.enabled,semanticHighlighting.enum.italic,semanticHighlighting.field.color,semanticHighlighting.field.enabled,semanticHighlighting.inheritedField.color,semanticHighlighting.inheritedMethodInvocation.color,semanticHighlighting.inheritedMethodInvocation.enabled,semanticHighlighting.interface.color,semanticHighlighting.interface.enabled,semanticHighlighting.localVariable.color,semanticHighlighting.localVariable.enabled,semanticHighlighting.localVariableDeclaration.bold,semanticHighlighting.localVariableDeclaration.color,semanticHighlighting.localVariableDeclaration.enabled,semanticHighlighting.method.color,semanticHighlighting.method.enabled,semanticHighlighting.methodDeclarationName.bold,semanticHighlighting.methodDeclarationName.color,semanticHighlighting.methodDeclarationName.enabled,semanticHighlighting.number.color,semanticHighlighting.number.enabled,semanticHighlighting.parameterVariable.color,semanticHighlighting.parameterVariable.enabled,semanticHighlighting.staticField.color,semanticHighlighting.staticField.enabled,semanticHighlighting.staticFinalField.color,semanticHighlighting.staticFinalField.enabled,semanticHighlighting.staticMethodInvocation.color,semanticHighlighting.staticMethodInvocation.enabled,semanticHighlighting.typeArgument.color,semanticHighlighting.typeArgument.enabled,semanticHighlighting.typeParameter.bold,semanticHighlighting.typeParameter.color,semanticHighlighting.typeParameter.enabled,semanticHighlighting.varKeyword.color,sourceHoverBackgroundColor,
-pf_coloring_argument=198,36,92
-pf_coloring_assignment=230,230,230
-pf_coloring_comment=128,128,128
-pf_coloring_key=230,230,230
-=======
 content_assist_completion_replacement_foreground=200,0,0
 content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaChainProposalCategory\u0000
 content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.FileOutputStream"/><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.FileOutputStream"/><rhs name\="java.util.Scanner"/></lhs><lhs name\="constructor.Car"><rhs name\="constructor.Car"/></lhs><lhs name\="structure.Dog"><rhs name\="structure.Dog"/></lhs><lhs name\="superclass.Airplane"><rhs name\="superclass.SuperSonicAirplane"/></lhs><lhs name\="superclass.SuperSonicAirplane"><rhs name\="superclass.SuperSonicAirplane"/></lhs><lhs name\="thiskeyword.Person"><rhs name\="thiskeyword.Person"/></lhs><lhs name\="accessmodifier.game.Commoner"><rhs name\="accessmodifier.game.ProtectedWarrior"/></lhs><lhs name\="accessmodifier.game.ProtectedWarrior"><rhs name\="accessmodifier.game.ProtectedWarrior"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.String"/><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.AbstractStringBuilder"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/><rhs name\="java.util.LinkedList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/><rhs name\="java.util.LinkedList"/><rhs name\="java.sql.SQLException"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/><rhs name\="java.util.LinkedList"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.io.OutputStream"><rhs name\="java.io.FileOutputStream"/></lhs><lhs name\="java.io.Flushable"><rhs name\="java.io.FileOutputStream"/></lhs><lhs name\="java.io.FileOutputStream"><rhs name\="java.io.FileOutputStream"/></lhs><lhs name\="java.lang.Exception"><rhs name\="java.sql.SQLException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="java.sql.SQLException"/></lhs><lhs name\="java.sql.SQLException"><rhs name\="java.sql.SQLException"/></lhs></history>
-content_assist_number_of_computers=20
+content_assist_number_of_computers=23
 content_assist_parameters_background=52,57,61
 content_assist_parameters_foreground=238,238,238
-content_assist_proposals_background=52,57,61
-content_assist_proposals_foreground=238,238,238
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
 eclipse.preferences.version=1
 java_bracket=249,250,244
 java_comment_task_tag=154,140,124
@@ -61,32 +26,23 @@ java_string=23,198,163
 matchingBracketsColor=249,250,244
 org.eclipse.jdt.internal.ui.navigator.layout=2
 org.eclipse.jdt.internal.ui.navigator.librariesnode=true
-org.eclipse.jdt.ui.formatterprofiles.version=21
-overriddenByCSS=,content_assist_completion_replacement_background,content_assist_completion_replacement_foreground,content_assist_parameters_background,content_assist_parameters_foreground,content_assist_proposals_background,content_assist_proposals_foreground,java_bracket,java_comment_task_tag,java_default,java_doc_default,java_doc_keyword,java_doc_link,java_doc_tag,java_keyword,java_keyword_bold,java_keyword_return,java_keyword_return_bold,java_multi_line_comment,java_operator,java_single_line_comment,java_string,matchingBracketsColor,pf_coloring_argument,pf_coloring_assignment,pf_coloring_comment,pf_coloring_key,pf_coloring_value,semanticHighlighting.abstractClass.color,semanticHighlighting.abstractClass.enabled,semanticHighlighting.abstractMethodInvocation.color,semanticHighlighting.abstractMethodInvocation.enabled,semanticHighlighting.annotation.color,semanticHighlighting.annotation.enabled,semanticHighlighting.annotation.italic,semanticHighlighting.annotationElementReference.color,semanticHighlighting.annotationElementReference.enabled,semanticHighlighting.class.color,semanticHighlighting.class.enabled,semanticHighlighting.deprecatedMember.color,semanticHighlighting.deprecatedMember.enabled,semanticHighlighting.deprecatedMember.underline,semanticHighlighting.deprecatedMember.strikethrough,semanticHighlighting.enum.color,semanticHighlighting.enum.enabled,semanticHighlighting.enum.italic,semanticHighlighting.field.color,semanticHighlighting.field.enabled,semanticHighlighting.inheritedField.color,semanticHighlighting.inheritedMethodInvocation.color,semanticHighlighting.inheritedMethodInvocation.enabled,semanticHighlighting.interface.color,semanticHighlighting.interface.enabled,semanticHighlighting.localVariable.color,semanticHighlighting.localVariable.enabled,semanticHighlighting.localVariableDeclaration.color,semanticHighlighting.localVariableDeclaration.enabled,semanticHighlighting.localVariableDeclaration.bold,semanticHighlighting.method.color,semanticHighlighting.method.enabled,semanticHighlighting.methodDeclarationName.color,semanticHighlighting.methodDeclarationName.enabled,semanticHighlighting.methodDeclarationName.bold,semanticHighlighting.number.color,semanticHighlighting.number.enabled,semanticHighlighting.parameterVariable.color,semanticHighlighting.parameterVariable.enabled,semanticHighlighting.staticField.color,semanticHighlighting.staticField.enabled,semanticHighlighting.staticFinalField.color,semanticHighlighting.staticFinalField.enabled,semanticHighlighting.staticMethodInvocation.color,semanticHighlighting.staticMethodInvocation.enabled,semanticHighlighting.typeArgument.color,semanticHighlighting.typeArgument.enabled,semanticHighlighting.typeParameter.color,semanticHighlighting.typeParameter.enabled,semanticHighlighting.typeParameter.bold,semanticHighlighting.restrictedKeywords.color,semanticHighlighting.restrictedKeywords.bold,sourceHoverBackgroundColor,
+org.eclipse.jdt.ui.formatterprofiles.version=18
+overriddenByCSS=,content_assist_completion_replacement_background,content_assist_completion_replacement_foreground,content_assist_parameters_background,content_assist_parameters_foreground,java_bracket,java_comment_task_tag,java_default,java_doc_default,java_doc_keyword,java_doc_link,java_doc_tag,java_keyword,java_keyword_bold,java_keyword_return,java_keyword_return_bold,java_multi_line_comment,java_operator,java_single_line_comment,java_string,matchingBracketsColor,pf_coloring_argument,pf_coloring_assignment,pf_coloring_comment,pf_coloring_key,pf_coloring_value,semanticHighlighting.abstractClass.color,semanticHighlighting.abstractClass.enabled,semanticHighlighting.abstractMethodInvocation.color,semanticHighlighting.abstractMethodInvocation.enabled,semanticHighlighting.annotation.color,semanticHighlighting.annotation.enabled,semanticHighlighting.annotation.italic,semanticHighlighting.annotationElementReference.color,semanticHighlighting.annotationElementReference.enabled,semanticHighlighting.class.color,semanticHighlighting.class.enabled,semanticHighlighting.deprecatedMember.color,semanticHighlighting.deprecatedMember.enabled,semanticHighlighting.deprecatedMember.underline,semanticHighlighting.deprecatedMember.strikethrough,semanticHighlighting.enum.color,semanticHighlighting.enum.enabled,semanticHighlighting.enum.italic,semanticHighlighting.field.color,semanticHighlighting.field.enabled,semanticHighlighting.inheritedField.color,semanticHighlighting.inheritedMethodInvocation.color,semanticHighlighting.inheritedMethodInvocation.enabled,semanticHighlighting.interface.color,semanticHighlighting.interface.enabled,semanticHighlighting.localVariable.color,semanticHighlighting.localVariable.enabled,semanticHighlighting.localVariableDeclaration.color,semanticHighlighting.localVariableDeclaration.enabled,semanticHighlighting.localVariableDeclaration.bold,semanticHighlighting.method.color,semanticHighlighting.method.enabled,semanticHighlighting.methodDeclarationName.color,semanticHighlighting.methodDeclarationName.enabled,semanticHighlighting.methodDeclarationName.bold,semanticHighlighting.number.color,semanticHighlighting.number.enabled,semanticHighlighting.parameterVariable.color,semanticHighlighting.parameterVariable.enabled,semanticHighlighting.staticField.color,semanticHighlighting.staticField.enabled,semanticHighlighting.staticFinalField.color,semanticHighlighting.staticFinalField.enabled,semanticHighlighting.staticMethodInvocation.color,semanticHighlighting.staticMethodInvocation.enabled,semanticHighlighting.typeArgument.color,semanticHighlighting.typeArgument.enabled,semanticHighlighting.typeParameter.color,semanticHighlighting.typeParameter.enabled,semanticHighlighting.typeParameter.bold,semanticHighlighting.varKeyword.color,sourceHoverBackgroundColor,
 pf_coloring_argument=221,40,103
 pf_coloring_assignment=217,232,247
 pf_coloring_comment=128,128,128
 pf_coloring_key=217,232,247
->>>>>>> ddcf14621811d86b6dd6e55f6642b5d854e23429
 pf_coloring_value=23,198,163
 semanticHighlighting.abstractClass.color=62,171,230
 semanticHighlighting.abstractClass.enabled=true
 semanticHighlighting.abstractMethodInvocation.color=128,246,167
 semanticHighlighting.abstractMethodInvocation.enabled=true
-<<<<<<< HEAD
-semanticHighlighting.annotation.color=158,158,158
-=======
 semanticHighlighting.annotation.color=160,160,160
->>>>>>> ddcf14621811d86b6dd6e55f6642b5d854e23429
 semanticHighlighting.annotation.enabled=true
 semanticHighlighting.annotation.italic=true
 semanticHighlighting.annotationElementReference.color=235,75,100
 semanticHighlighting.annotationElementReference.enabled=true
-<<<<<<< HEAD
-semanticHighlighting.class.color=16,129,175
-=======
 semanticHighlighting.class.color=18,144,195
->>>>>>> ddcf14621811d86b6dd6e55f6642b5d854e23429
 semanticHighlighting.class.enabled=true
 semanticHighlighting.deprecatedMember.color=128,128,128
 semanticHighlighting.deprecatedMember.enabled=true
@@ -110,21 +66,12 @@ semanticHighlighting.localVariableDeclaration.enabled=true
 semanticHighlighting.method.color=167,236,33
 semanticHighlighting.method.enabled=true
 semanticHighlighting.methodDeclarationName.bold=false
-<<<<<<< HEAD
-semanticHighlighting.methodDeclarationName.color=27,162,57
-=======
 semanticHighlighting.methodDeclarationName.color=30,181,64
->>>>>>> ddcf14621811d86b6dd6e55f6642b5d854e23429
 semanticHighlighting.methodDeclarationName.enabled=true
 semanticHighlighting.number.color=104,151,187
 semanticHighlighting.number.enabled=true
 semanticHighlighting.parameterVariable.color=121,171,255
 semanticHighlighting.parameterVariable.enabled=true
-<<<<<<< HEAD
-=======
-semanticHighlighting.restrictedKeywords.bold=false
-semanticHighlighting.restrictedKeywords.color=204,108,29
->>>>>>> ddcf14621811d86b6dd6e55f6642b5d854e23429
 semanticHighlighting.staticField.color=141,218,248
 semanticHighlighting.staticField.enabled=true
 semanticHighlighting.staticFinalField.color=141,218,248
@@ -134,14 +81,9 @@ semanticHighlighting.staticMethodInvocation.enabled=true
 semanticHighlighting.typeArgument.color=177,102,218
 semanticHighlighting.typeArgument.enabled=true
 semanticHighlighting.typeParameter.bold=false
-<<<<<<< HEAD
-semanticHighlighting.typeParameter.color=171,171,171
-semanticHighlighting.typeParameter.enabled=true
-semanticHighlighting.varKeyword.color=183,108,45
-=======
 semanticHighlighting.typeParameter.color=191,164,164
 semanticHighlighting.typeParameter.enabled=true
->>>>>>> ddcf14621811d86b6dd6e55f6642b5d854e23429
+semanticHighlighting.varKeyword.color=204,120,50
 sourceHoverBackgroundColor=68,68,68
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true

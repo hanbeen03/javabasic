@@ -38,18 +38,11 @@
 </head>
 <body>
 	<h1><%= id %>님의 회원정보 수정이 완료되었습니다.</h1>
-<<<<<<< HEAD
 	<a href="users_login_form.jsp">로그인창으로 돌아가기</a>
 </body>
 </html>
 
 <%	} else if (check == 0) {
-=======
-	<a href="users_login_ok.jsp">메인 창으로 돌아가기</a>
-</body>
-</html>
-<% } else if (check == 0) {
->>>>>>> ddcf14621811d86b6dd6e55f6642b5d854e23429
 		response.sendRedirect("users_update_fail.jsp");
 	}
 	
