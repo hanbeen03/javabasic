@@ -3,12 +3,19 @@ package kr.co.ictedu;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import kr.co.ictedu.board.service.BoardDetailService;
+import kr.co.ictedu.board.service.BoardListService;
+import kr.co.ictedu.board.service.BoardWriteService;
+import kr.co.ictedu.board.service.IBoardService;
+
 
 /**
  * Servlet implementation class PatternServlet
@@ -86,6 +93,10 @@ public class PatternServlet extends HttpServlet {
 	//만약 요청 메서드(get, post) 상관 없이 처리하게 만들고 싶다면
 	//메서드 하나를더 만들어서 요청한다.
 	protected void doRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		IBoardService sv = null;
+		
+		String ui = null;
+		
 		String uri = request.getRequestURI();
 		System.out.println("uri패턴 : " + uri);
 		
@@ -97,24 +108,51 @@ public class PatternServlet extends HttpServlet {
 			System.out.println("회원가입 요청 확인");
 		} else if (uri.equals("/MyFirstWeb/login.do")) {
 			System.out.println("로그인 요청 확인");
-		} else if (uri.equals("/MyFirstWeb/update.do")) {
+		} else if (uri.equals("/MyFirstWeb/userupdate.do")) {
 			System.out.println("수정 요청 확인");
-		} else if (uri.equals("/MyFirstWeb/delete.do")) {
+		} else if (uri.equals("/MyFirstWeb/userdelete.do")) {
 			System.out.println("탈퇴 요청 확인");
 		} 
 		
 		
-		else if (uri.equals("/MyFirstWeb/write.do")) {
+		else if (uri.equals("/MyFirstWeb/boardwrite.do")) {
 			System.out.println("글쓰기 창으로 이동합니다.");
-		} else if (uri.equals("/MyFirstWeb/update.do")) {
+			sv = new BoardWriteService();
+			sv.execute(request, response);
+			
+			//경로 저장시 /는 WebContent폴더가 기본을 잡혀있습니다.
+			ui = "/board/board_list.jsp";
+			//경로 저장 후에는 페이지 강제이동(forward)를 수행합니다.
+			
+			
+		} else if (uri.equals("/MyFirstWeb/boardupdate.do")) {
 			System.out.println("글 수정 창으로 이동합니다.");
-		} else if (uri.equals("/MyFirstWeb/delete.do")) {
+		} else if (uri.equals("/MyFirstWeb/boarddelete.do")) {
 			System.out.println("글 삭제 창으로 이동합니다.");
-		} else if (uri.equals("/MyFirstWeb/select.do")) {
+		} else if (uri.equals("/MyFirstWeb/boardselect.do")) {
 			System.out.println("글 조회 창으로 이동합니다.");
+			sv = new BoardListService();
+			sv.execute(request, response);
+			
+			ui = "/board/board_list.jsp";
+		} else if (uri.equals("/MyFirstWeb/boarddetail.do")) {
+			sv = new BoardDetailService();
+			sv.execute(request, response);
+			
+			ui = "/board/board_detail.jsp";
 		} else {
 			out.print("잘못된 패턴입니다.");
 		}
+		
+		//포워드 로직은 조건문이 모두 작동한 뒤에 실행합니다.
+		// RequestDispatcher를 사용해 포워딩을 하면
+		// request, response를 jsp페이지에 전달할 수 있습니다.
+		// 모델2 방식은 스크립트릿을 쓰지 않기 때문에
+		// 컨트롤러단에서 출력에 필요한 데이터를 받아놨다
+		// 포워드로 .jsp에 전달합니다.
+		RequestDispatcher dp = request.getRequestDispatcher(ui);
+		dp.forward(request, response);
+		
 	}
 
 }
