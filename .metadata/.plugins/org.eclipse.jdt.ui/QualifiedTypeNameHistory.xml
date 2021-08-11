@@ -46,12 +46,14 @@
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.IBoardService"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-<fullyQualifiedTypeName name="java.sql.Timestamp"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardListService"/>
-<fullyQualifiedTypeName name="kr.co.ictedu.board.model.BoardDAO"/>
-<fullyQualifiedTypeName name="kr.co.ictedu.board.model.BoardVO"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardDetailService"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardDeleteService"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.board.model.BoardVO"/>
+<fullyQualifiedTypeName name="java.sql.Timestamp"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.board.model.BoardDAO"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardUpdateService"/>
 </qualifiedTypeNameHistroy>

@@ -157,4 +157,76 @@ public class BoardDAO {
 		}
 		return vo;
 	}//getBoardDetail END
+	
+	public int delete(String bid) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		int result;
+		
+		String sql = "DELETE FROM jspboard WHERE bid = ?";
+		
+		try {
+			con = ds.getConnection();
+			
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setString(1, bid);
+			
+			pstmt.executeUpdate();
+			
+			result = 1;
+		} catch (Exception e) {
+			e.printStackTrace();
+			result = 0;
+		} finally {
+			try {
+				if( con != null && !con.isClosed()) {
+					con.close();
+				}
+				if( pstmt != null && !pstmt.isClosed()) {
+					pstmt.close();
+				}
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return result;
+	}
+	
+	public int update(BoardVO vo) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		int result;
+		
+		String sql = "UPDATE jspboard SET btitle = ?, bcontent = ? "
+				+ "WHERE bid = ?";
+		
+		try {
+			con = ds.getConnection();
+			
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setString(1, vo.getbTitle());
+			pstmt.setString(2, vo.getbContent());
+			pstmt.setInt(3, vo.getbId());
+			
+			pstmt.executeUpdate();
+			
+			result = 1;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			result = 0;
+		} finally {
+			try {
+				if( con != null && !con.isClosed()) {
+					con.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return result;
+	}
 }
