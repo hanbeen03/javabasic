@@ -20,7 +20,7 @@
 			</tr>
 			<tr>
 				<td align="center"><b>글쓴이</b></td>
-				<td><input type="text" name="writer" placeholder="작성자 이름을 입력하세요"/></td>
+				<td><input type="text" name="writer" value="${param.writer }" placeholder="작성자 이름을 입력하세요" readonly/></td>
 			</tr>
 			<tr>
 				<td>

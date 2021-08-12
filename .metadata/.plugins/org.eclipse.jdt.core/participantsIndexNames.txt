@@ -15,6 +15,8 @@ C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\22011
 \JSPBasic\src
 C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1147028859.index
 \JSPBasic\src
+C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\700495602.index
+\MyFirstWeb\src
 C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\511870316.index
 \JSPBasic\src
 C:\eclipse\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4277188207.index
