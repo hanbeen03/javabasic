@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="Scanner1"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="constructor.Car"/>
-<fullyQualifiedTypeName name="structure.Dog"/>
 <fullyQualifiedTypeName name="structure.PersonClass"/>
 <fullyQualifiedTypeName name="superclass.SuperSonicAirplane"/>
 <fullyQualifiedTypeName name="thiskeyword.Person"/>
@@ -33,27 +29,35 @@
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="javax.naming.Context"/>
 <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardWriteService"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.IBoardService"/>
-<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardListService"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardDetailService"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardDeleteService"/>
-<fullyQualifiedTypeName name="kr.co.ictedu.board.model.BoardVO"/>
 <fullyQualifiedTypeName name="java.sql.Timestamp"/>
-<fullyQualifiedTypeName name="kr.co.ictedu.board.model.BoardDAO"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardUpdateService"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.user.service.IUserService"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.user.service.UserLoginService"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.user.model.UsersVO"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.user.model.UsersDAO"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.user.service.UserJoinService"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.user.service.UserLogoutService"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.board.model.BoardDAO"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.board.model.BoardVO"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardPagingService"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="kr.co.ictedu.board.model.BoardPageDTO"/>
 </qualifiedTypeNameHistroy>

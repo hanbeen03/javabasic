@@ -260,5 +260,95 @@ public class BoardDAO {
 				e.printStackTrace();
 			}
 		}
+	}// END upHit
+	
+	public List<BoardVO> getPageList(int pageNum) {
+		List<BoardVO> board = new ArrayList<>();
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String sql = "SELECT * FROM jspboard ORDER BY bid DESC LIMIT ?, 10 ";
+		
+		try {
+			con = ds.getConnection();
+			
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setInt(1, pageNum);
+			
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				BoardVO vo = new BoardVO();
+				
+				vo.setbId(rs.getInt("bid"));
+				vo.setbName(rs.getString("bname"));
+				vo.setbTitle(rs.getString("btitle"));
+				vo.setbContent(rs.getString("bcontent"));
+				vo.setbDate(rs.getTimestamp("bdate"));
+				vo.setbHit(rs.getInt("bhit"));
+				
+				board.add(vo);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			board = null;
+		} finally {
+			try {
+				if( con != null && !con.isClosed()) {
+					con.close();
+				}
+				if( pstmt != null && !pstmt.isClosed()) {
+					pstmt.close();
+				}
+				if( rs != null && !rs.isClosed()) {
+					rs.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return board;
+	}
+	
+	public int getBoardCount() {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		int result = 0;
+		
+		String sql = "SELECT COUNT(*) FROM jspboard";
+		
+		try {
+			con = ds.getConnection();
+			
+			pstmt = con.prepareStatement(sql);
+			
+			rs = pstmt.executeQuery();
+			
+			rs.next();
+			
+			result = rs.getInt(1);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if( con != null && !con.isClosed()) {
+					con.close();
+				}
+				if( pstmt != null && !pstmt.isClosed()) {
+					pstmt.close();
+				}
+				if( rs != null && !rs.isClosed()) {
+					rs.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return result;
 	}
 }

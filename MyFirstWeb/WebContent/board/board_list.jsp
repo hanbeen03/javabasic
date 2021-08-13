@@ -31,6 +31,27 @@
 			</c:forEach>
 		</tbody>
 	</table>
+	
+	<c:if test="${pageDTO.hasBoard() }">
+		<c:if test="${pageDTO.startPage > 10 }">
+			<a href="/MyFirstWeb/boardselect.do?page=${pageDTO.startPage - 10}">
+				[prev]
+			</a>
+		</c:if>
+		
+		<c:forEach var="pNo" begin="${pageDTO.startPage}" end="${pageDTO.endPage}" >
+			<a href="/MyFirstWeb/boardselect.do?page=${pNo }">[${pNo}]</a>
+		</c:forEach>
+		
+		<c:if test="${pageDTO.endPage < pageDTO.totalPages }">
+			<a href="/MyFirstWeb/boardselect.do?page=${pageDTO.startPage + 10}">
+				[next]
+			</a>
+		</c:if>
+		
+	</c:if>
+	
+	<br/>
 	<a href="/MyFirstWeb/board/board_write_form.jsp?writer=${writer}">글쓰기</a>&nbsp;
 	<a href="/MyFirstWeb/logout.do">로그아웃</a>
 </body>

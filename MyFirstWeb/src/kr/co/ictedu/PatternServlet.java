@@ -15,6 +15,7 @@ import javax.servlet.http.HttpSession;
 import kr.co.ictedu.board.service.BoardDeleteService;
 import kr.co.ictedu.board.service.BoardDetailService;
 import kr.co.ictedu.board.service.BoardListService;
+import kr.co.ictedu.board.service.BoardPagingService;
 import kr.co.ictedu.board.service.BoardUpdateService;
 import kr.co.ictedu.board.service.BoardWriteService;
 import kr.co.ictedu.board.service.IBoardService;
@@ -187,7 +188,9 @@ public class PatternServlet extends HttpServlet {
 			String writer = (String)session.getAttribute("session_id");
 			request.setAttribute("writer", writer);
 			
-			sv = new BoardListService();
+			//sv = new BoardListService();
+			//sv.execute(request, response);
+			sv = new BoardPagingService();
 			sv.execute(request, response);
 			
 			ui = "/board/board_list.jsp";
