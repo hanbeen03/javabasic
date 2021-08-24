@@ -34,22 +34,23 @@
 	</table>
 	
 	<c:if test="${pageDTO.hasBoard() }">
-		<c:if test="${pageDTO.startPage > 10 }">
-			<a href="/MyFirstWeb/boardselect.do?page=${pageDTO.startPage - 10}">
-				[prev]
-			</a>
-		</c:if>
+		<%-- 표현할 글이 있다면 부트스트랩 페이징처리 적용. --%>
+		<ul class="pagination justify-content-center">
 		
-		<c:forEach var="pNo" begin="${pageDTO.startPage}" end="${pageDTO.endPage}" >
-			<a href="/MyFirstWeb/boardselect.do?page=${pNo }">[${pNo}]</a>
-		</c:forEach>
+			<c:if test="${pageDTO.startPage > 10 }">
+				<li class="page-item"><a class="page-link" href="/MyFirstWeb/boardselect.do?page=${pageDTO.startPage - 10}">«</a></li>
+			</c:if>
+			
+			<c:forEach var="pNo" begin="${pageDTO.startPage}" end="${pageDTO.endPage}" >
+				<li class="page-item"><a class="page-link" href="/MyFirstWeb/boardselect.do?page=${pNo }">${pNo}</a></li>
+			</c:forEach>
+			
+			<c:if test="${pageDTO.endPage < pageDTO.totalPages }">
+				<li class="page-item"><a class="page-link" href="/MyFirstWeb/boardselect.do?page=${pageDTO.startPage + 10}">»</a></li>
+				
+			</c:if>
 		
-		<c:if test="${pageDTO.endPage < pageDTO.totalPages }">
-			<a href="/MyFirstWeb/boardselect.do?page=${pageDTO.startPage + 10}">
-				[next]
-			</a>
-		</c:if>
-		
+		</ul>
 	</c:if>
 	
 	<br/>

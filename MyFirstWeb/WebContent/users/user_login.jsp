@@ -35,11 +35,13 @@
 				</div>	
 			</div>
 			<div class="row">
-				<div class="col-md-2 offset-md-3">
+				<div class="col-md-2 offset-md-2">
 					<input type="submit" value="로그인" class="btn btn-primary" />&nbsp;
 				</div>
+				<div class="col-md-2">
+					<a href="users/users_join_form.jsp" class="btn btn-primary">회원가입</a>
+				</div>
 			</div>
-			<a href="users/users_join_form.jsp">회원가입</a>
 		</form>
 	</div>
 </body>
