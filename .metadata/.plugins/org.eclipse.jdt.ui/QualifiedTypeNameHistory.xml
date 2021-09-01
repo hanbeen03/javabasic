@@ -41,7 +41,6 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardListService"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardDetailService"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardDeleteService"/>
 <fullyQualifiedTypeName name="java.sql.Timestamp"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardUpdateService"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="kr.co.ictedu.board.service.BoardPagingService"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="kr.co.ictedu.board.model.BoardPageDTO"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
